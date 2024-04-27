@@ -1,0 +1,90 @@
+/* SECTION-SKILL CLASS */
+.my-skills {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px 0;
+    color: black;
+    background: linear-gradient(90deg, rgb(149, 235, 206) 0%, rgb(131, 188, 190) 35%, rgb(201, 216, 240) 100%);
+}
+
+
+
+.my-skills h3 {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0 58px;
+    position: relative;
+    display: inline-block;
+    margin-left: 0px;
+}
+
+
+.my-skills h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; 
+    height: 4px;
+    background-color: #4070f4;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .my-skills h3 {
+        font-size: 30px; /* Decrease font size for smaller screens */
+        padding: 0 28px; /* Adjust padding for smaller screens */
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+}
+
+
+
+
+/* GRID-CONTAINER */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+    height: 50vh;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-item {
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.grid-item:hover {
+    transform: scale(1.1); /* Scale up the item on hover */
+}
+
+
+.grid-item img {
+    width: 60px;
+    height: 60px;
+}
+.grid-item p{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-wrapper {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    border: 10px solid #61617a; /* Add a solid border around the box */
+    padding: 20px; /* Add padding inside the box */
+    background: linear-gradient(45deg, #b7e7cf, #83cbdd); /* Add a gradient background */
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}

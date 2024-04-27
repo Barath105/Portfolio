@@ -1,0 +1,375 @@
+/* HOME */
+.container{
+    margin: 25px;
+}
+.name {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    color:blue;
+    animation: bounce 4s infinite; /* Apply the bounce animation */
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Start and end at the same position */
+    }
+    40% {
+        transform: translateY(-20px); /* Move up slightly */
+    }
+    60% {
+        transform: translateY(-10px); /* Move up slightly */
+    }
+}
+
+
+h2 {
+    font-size: 5px;
+    color:black;
+}
+
+
+
+p{
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(18, 134, 187);
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+        
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        
+    }
+}
+
+.col-md-6 img{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+
+
+
+
+@media (max-width: 768px) {
+        
+    .col-md-6 {
+                margin: 0 auto;
+                padding: 50px;
+                margin: 10px 20px;
+            }
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+
+}
+
+
+            
+
+        @media only screen and (max-width: 768px) {
+            .child-2 nav {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: rgb(190, 222, 248);
+                padding: 10px;
+                z-index: 1;
+                overflow-x: hidden;
+            }
+        
+            .child-2 nav.show {
+                display: flex;
+                overflow-x: hidden;
+            }
+        
+            .menu-icon {
+                display: block;
+                cursor: pointer;
+                z-index: 2;
+                
+            }
+        
+            .child-2 nav a {
+                margin: 10px 0;
+            }
+        
+            .child-2 nav a:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+/* PROFILE */
+
+.img {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 68%; 
+    overflow: hidden; 
+    align-items: center;
+    
+
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .img {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about h1 {
+    margin-top: 20px;
+    color: #333;
+    display: inline-block;
+    align-items: center;
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .column {
+        flex: 1 1 100%;
+    }
+
+    .img {
+        order: 1;
+    }
+
+    .about {
+        order: 2;
+    }
+}
+
+.blue-text {
+    animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% { color: blue; }
+    50% { color: rgb(228, 60, 9) }
+    100% { color: blue; }
+}
+
+/* Button- Hire me */
+
+.hire-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.hire-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.about {
+    text-align: center;
+    
+}
+
+.about h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.hire-button, .contact-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.hire-button:hover, .contact-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.resume-button::after {
+    content: '';
+    background-image: url('/images/download.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+.study{
+    font-size: 15px;
+    
+}
+
+
+.column about{
+    height: auto;
+}
+
+
+.fade-in {
+    transform-origin: bottom; 
+    animation: slideUpAnimation 1s ease-in-out forwards;
+}
+
+@keyframes slideUpAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.animate-img img {
+    animation: slideUpAnimation 1s ease-in-out forwards;
+    transform-origin: bottom;
+}
+
+@keyframes slideUpAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.social-media-icons {
+    margin-top: 30px;
+}
+
+.social-media-icons a {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-media-icons img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader::after {
+    content: "";
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+body.loaded .loader {
+    display: none;
+}
+
+.content-hidden {
+    visibility: hidden;
+}

@@ -1,0 +1,144 @@
+/* ABOUT */
+
+.about-section h3 {
+    font-size: 28px;
+    color: rgb(21, 50, 214);
+    margin: 0 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.about-section p {
+    font-size: 18px;
+    padding: 0 40px;
+    color: #333;
+    text-align: justify;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .about-section h3 {
+        font-size: 24px;
+        margin: 0 20px; 
+    }
+    
+    .about-section p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+}
+
+
+
+.about-us {
+    height: auto;
+    padding: 50px 0;
+    background: linear-gradient(90deg, rgb(198, 197, 231) 0%, rgb(198, 237, 238) 35%, rgb(228, 211, 235) 100%);
+}
+
+.pic {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+
+
+.about-1 {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.text h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; 
+    height: 4px;
+    background-color: #4070f4;
+}
+
+.text h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.text span {
+    color: #f33b0e;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.data {
+    margin-top: 30px;
+}
+
+.hire {
+    font-size: 16px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.hire:hover {
+    background: #000;
+    border: 1px solid #4070f4;
+}
+
+@media only screen and (min-width: 768px) {
+    .about-us {
+        height: 100vh;
+    }
+
+    .about-1 {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .text {
+        width: 50%;
+        text-align: justify;
+    }
+
+    .pic {
+        width: 40%;
+        max-width: 40%;
+        padding: 24px;
+    }
+}
